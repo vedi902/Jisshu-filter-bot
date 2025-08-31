@@ -175,16 +175,16 @@ async def start(client:Client, message):
          #       newPoint = await db.get_point(refUserId)
              if AUTH_CHANNEL and await is_req_subscribed(client, message):
                         buttons = [[
-                            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                            InlineKeyboardButton('𓆩ཫ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ཀ𓆪', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                            InlineKeyboardButton("𓆩Hᴇʟᴘ ⚙️𓆪", callback_data='features'),
+                            InlineKeyboardButton('𓆩Aʙᴏᴜᴛ 💌𓆪', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                            InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                            InlineKeyboardButton('𓆩Pʀᴇᴍɪᴜᴍ 🎫𓆪', callback_data='seeplans'),
+                            InlineKeyboardButton('𓆩Rᴇғᴇʀ ⚜️𓆪', callback_data="reffff")
                         ],[
-                            InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                            InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                            InlineKeyboardButton('𓆩Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍𓆪', callback_data="mostsearch"),
+                            InlineKeyboardButton('𓆩Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡𓆪', callback_data="trending")
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
                         m=await message.reply_sticker("CAACAgUAAxkBAAKr02gNzDnJzDYRrUnQkF-yKnHByUC2AAIEAAPBJDExieUdbguzyBA2BA") 
@@ -1135,3 +1135,4 @@ async def reset_group_command(client, message):
     await save_default_settings(grp_id)
     await message.reply_text('ꜱᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ʀᴇꜱᴇᴛ ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ...')
     
+
